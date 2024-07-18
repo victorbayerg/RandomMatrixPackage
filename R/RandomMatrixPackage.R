@@ -35,10 +35,12 @@ extract_random_number <- function(mat) {
 #' @param vec A vector to be permuted.
 #' @return A permuted vector.
 #' @examples
-#' permute_vector(c(1, 2, 3, 4, 5))
+#' vec <- c(1, 2, 3, 4, 5)
+#' permuted_vec <- permute_vector(vec)
+#' print(permuted_vec)
 #' @export
 permute_vector <- function(vec) {
-  return(vec[sample(lenght(vec))])
+  vec[sample(length(vec))]
 }
 
 #' Select random elements from a matrix
